@@ -1,2 +1,50 @@
-# ecomerce-retail-analysis
-E-commerce data analysis: RFM segmentation, cohort analysis,  Power BI dashboard
+# E-commerce Retail Analysis
+
+Анализ данных интернет-магазина на основе реального датасета Online Retail II (UCI).  
+1 млн+ транзакций за 2009–2011 гг., 5862 уникальных клиента.
+
+## Цель проекта
+Провести полный цикл анализа данных: от очистки сырых данных до сегментации клиентов,  
+с практикой SQL, Python и визуализации.
+
+## Стек технологий
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
+![Power BI](https://img.shields.io/badge/PowerBI-yellow)
+
+- **Python** — Pandas, Matplotlib, Seaborn, SQLAlchemy
+- **PostgreSQL** — хранение данных, SQL-анализ
+- **Power BI** — дашборд (в разработке)
+- **Git** — контроль версий
+
+## Структура проекта
+
+| Ноутбук | Описание |
+|---|---|
+| `01_data_loading.ipynb` | Загрузка, очистка данных, заливка в PostgreSQL |
+| `02_sql_analysis.ipynb` | SQL-анализ: оконные функции, топ товаров, MoM |
+| `03_rfm_analysis.ipynb` | RFM-сегментация клиентов |
+
+## Ключевые выводы
+
+- **Сезонность** — пик выручки в октябре-ноябре (+70% к среднему),  
+  минимум в январе-феврале
+- **Топ-20 клиентов** генерируют ~18% всей выручки
+- **Чемпионы** (21% базы) — главный сегмент по выручке
+- **22% клиентской базы** под угрозой оттока или уже потеряны
+- **Аномалия** — один оптовый заказ на 80 000 единиц товара
+
+## Визуализации
+
+### Выручка по месяцам
+![monthly](monthly_revenue.png)
+
+### Топ-20 товаров
+![products](top_products.png)
+
+### RFM-сегменты
+![rfm](rfm_segments.png)
+
+## Датасет
+[Online Retail II UCI](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) — 
+реальные транзакции британского интернет-магазина за 2009–2011 гг.
