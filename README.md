@@ -54,6 +54,17 @@
 - Сезонный всплеск в 11-й-12-й месяцы — клиенты возвращаются к следующему Рождеству
 - После 2-ого месяца retention стабилизируется — если удержали 2 месяца, клиент остаётся надолго
 
+## Дашборд Power BI
+
+### Обзор продаж
+![overview](dashboard_overview.png)
+
+### Клиенты и RFM сегменты
+![customers](dashboard_customers.png)
+
+### Анализ товаров
+![products](dashboard_products.png)
+
 ## Датасет
 [Online Retail II UCI](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci) — 
 реальные транзакции британского интернет-магазина за 2009–2011 гг.
